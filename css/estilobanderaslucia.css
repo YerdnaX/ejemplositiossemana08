@@ -1,0 +1,91 @@
+div{
+	width:300px;
+	height:200px;
+	margin:20px;
+	display:inline-block;
+	border:1px solid #000;
+	color:#fff;
+	text-align:center;
+}
+
+
+.coreadelsur{
+	background-color: white;
+	position: relative;
+	overflow: hidden;
+	color: #000;
+}
+
+.coreadelsur::before,
+.coreadelsur::after{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.coreadelsur::before{
+	background: linear-gradient(to bottom, #c60c30 50%, #003478 50%);
+}
+
+.coreadelsur::after{
+	background-image:
+		radial-gradient(circle at 50% 25%, #c60c30 25%, transparent 26%),
+		radial-gradient(circle at 50% 75%, #003478 25%, transparent 26%);
+}
+
+
+.austria{
+	background-image: linear-gradient(
+		red 33.33%,
+		white 33.33%, white 66.66%,
+		red 66.66%
+	);
+	color:#000;
+}
+
+.irlanda{
+	background-image: linear-gradient(
+		90deg,
+		green 33.33%,
+		white 33.33%, white 66.66%,
+		orange 66.66%
+	);
+	color:#000;
+}
+
+
+.mexico{
+	background-image: linear-gradient(
+		90deg,
+		green 33.33%,
+		white 33.33%, white 66.66%,
+		red 66.66%
+	);
+	color:#000;
+}
+
+
+.paisesbajos{
+	background-image: linear-gradient(
+		red 33.33%,
+		white 33.33%, white 66.66%,
+		#21468B 66.66%
+	);
+	color:#000;
+}
+
+.talandia{
+	background-image: linear-gradient(
+		red 16.66%,
+		white 16.66%, white 33.33%,
+		#00247D 33.33%, #00247D 66.66%,
+		white 66.66%, white 83.33%,
+		red 83.33%
+	);
+	color:#000;
+}
