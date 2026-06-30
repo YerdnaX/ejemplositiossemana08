@@ -1,0 +1,159 @@
+body{
+	margin:0;
+	font-family:Arial, sans-serif;
+	background:linear-gradient(180deg, #f4ecdf 0%, #fff8ef 100%);
+	color:#2c231d;
+}
+
+.pagina{
+	max-width:1100px;
+	margin:0 auto;
+	padding:30px 20px 50px;
+}
+
+.encabezado-pagina{
+	margin-bottom:30px;
+	text-align:center;
+}
+
+.boton-atras{
+	display:inline-block;
+	margin-bottom:18px;
+	padding:12px 22px;
+	border-radius:999px;
+	background-color:#7a4427;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.encabezado-pagina h1{
+	margin:0 0 10px;
+	font-size:42px;
+}
+
+.encabezado-pagina p{
+	margin:0;
+	font-size:18px;
+	color:#5c4739;
+}
+
+.cuadricula-banderas{
+	display:grid;
+	grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+	gap:22px;
+}
+
+.tarjeta-bandera{
+	padding:20px;
+	border-radius:18px;
+	background-color:#ffffff;
+	box-shadow:0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-bandera h2{
+	margin:16px 0 0;
+	font-size:24px;
+	text-align:center;
+}
+
+.bandera{
+	height:180px;
+	border-radius:14px;
+	border:1px solid #d9cfc4;
+	position:relative;
+	overflow:hidden;
+}
+
+.irlanda{
+	background-image:linear-gradient(
+		90deg,
+		#169b62 33.33%,
+		white 33.33%, white 66.66%,
+		#ff883e 66.66%
+	);
+}
+
+.suecia{
+	background-color:#006aa7;
+}
+
+.suecia::before{
+	content:"";
+	position:absolute;
+	top:0;
+	left:95px;
+	width:40px;
+	height:100%;
+	background-color:#fecc00;
+}
+
+.suecia::after{
+	content:"";
+	position:absolute;
+	top:80px;
+	left:0;
+	width:100%;
+	height:40px;
+	background-color:#fecc00;
+}
+
+.francia{
+	background-image:linear-gradient(
+		90deg,
+		#0055a4 33.33%,
+		white 33.33%, white 66.66%,
+		#ef4135 66.66%
+	);
+}
+
+.suiza{
+	background-color:#d52b1e;
+}
+
+.suiza::before{
+	content:"";
+	position:absolute;
+	top:45px;
+	left:130px;
+	width:40px;
+	height:110px;
+	background-color:white;
+}
+
+.suiza::after{
+	content:"";
+	position:absolute;
+	top:80px;
+	left:95px;
+	width:110px;
+	height:40px;
+	background-color:white;
+}
+
+.costademarfil{
+	background-image:linear-gradient(
+		90deg,
+		#f77f00 33.33%,
+		white 33.33%, white 66.66%,
+		#009e60 66.66%
+	);
+}
+
+.paisesbajos{
+	background-image:linear-gradient(
+		#ae1c28 33.33%,
+		white 33.33%, white 66.66%,
+		#21468b 66.66%
+	);
+}
+
+@media (max-width:600px){
+	.encabezado-pagina h1{
+		font-size:34px;
+	}
+
+	.bandera{
+		height:160px;
+	}
+}
