@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f7f2ea;
+	color: #2f241d;
+}
+
+.hero {
+	min-height: 70vh;
+	padding: 60px 20px;
+	background: linear-gradient(rgba(72, 45, 32, 0.65), rgba(72, 45, 32, 0.65)),
+		linear-gradient(135deg, #8c5a3c, #d7a86e);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.hero__content {
+	max-width: 700px;
+}
+
+.hero__tag {
+	margin: 0 0 12px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #f8e6cf;
+}
+
+.hero h1 {
+	margin: 0;
+	font-size: 64px;
+	color: #fff8f0;
+}
+
+.hero__text {
+	margin: 20px 0 30px;
+	font-size: 20px;
+	line-height: 1.6;
+	color: #fff3e3;
+}
+
+.hero__button {
+	display: inline-block;
+	padding: 14px 28px;
+	border-radius: 999px;
+	background-color: #ec7e11;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.content {
+	max-width: 960px;
+	margin: -40px auto 0;
+	padding: 0 20px 50px;
+}
+
+.card {
+	margin-bottom: 20px;
+	padding: 28px;
+	border-radius: 18px;
+	background-color: #ffffff;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+	margin-top: 0;
+	color: #7a4427;
+}
+
+.card p {
+	margin-bottom: 0;
+	line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+	.hero h1 {
+		font-size: 44px;
+	}
+
+	.hero__text {
+		font-size: 18px;
+	}
+
+	.content {
+		margin-top: -20px;
+	}
+}
