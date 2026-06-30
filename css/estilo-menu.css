@@ -87,7 +87,41 @@ body{
 
 
 
-
+/*Estilos de acerca de */
+.contenedor{
+	width: 800px;
+	margin: 30px auto;
+}
+.contenedor h1{
+	text-align: center;
+	color: #333;
+}
+.tarjetas{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+.contenedor .tarjeta{
+	width: 340px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 15px 20px;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.15);
+}
+.contenedor .tarjeta h2{
+	margin-top: 0;
+	color: #ec7e11;
+	font-size: 18px;
+}
+.contenedor .tarjeta p{
+	margin: 6px 0;
+	font-size: 14px;
+	color: #333;
+}
+.contenedor .tarjeta p strong{
+	color: #000;
+}
 
 
 
