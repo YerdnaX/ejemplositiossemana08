@@ -1,0 +1,64 @@
+body{
+	margin:0;
+	padding:20px;
+	font-family:Arial, sans-serif;
+	background:#f4f4f4;
+	text-align:center;
+}
+
+div{
+	width:300px;
+	height:200px;
+	margin:20px;
+	display:inline-flex;
+	align-items:flex-end;
+	justify-content:center;
+	padding-bottom:10px;
+	box-sizing:border-box;
+	border:1px solid #000;
+	text-transform:capitalize;
+	font-weight:bold;
+}
+
+.costarica{
+	background:linear-gradient(
+		blue 0 16.66%,
+		white 16.66% 33.33%,
+		red 33.33% 66.66%,
+		white 66.66% 83.33%,
+		blue 83.33% 100%
+	);
+}
+
+.colombia{
+	background:linear-gradient(
+		yellow 0 50%,
+		blue 50% 75%,
+		red 75% 100%
+	);
+}
+
+.panama{
+	background:linear-gradient(
+		white 0 33.33%,
+		blue 33.33% 66.66%,
+		red 66.66% 100%
+	);
+}
+
+.francia{
+	background:linear-gradient(90deg, blue 0 33.33%, white 33.33% 66.66%, red 66.66% 100%);
+}
+
+.jamaica{
+	background:
+		linear-gradient(26deg, transparent 44%, #fcd116 44% 56%, transparent 56%),
+		linear-gradient(-26deg, transparent 44%, #fcd116 44% 56%, transparent 56%),
+		linear-gradient(26deg, #009b3a 0 44%, #009b3a 44% 100%),
+		linear-gradient(-26deg, #000000 0 56%, #000000 56% 100%);
+	color:#fff;
+}
+
+.italia{
+	background:linear-gradient(90deg, green 0 33.33%, white 33.33% 66.66%, red 66.66% 100%);
+}

@@ -3,34 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilo-menu.css">
     <link rel="stylesheet" type="text/css" href="css/estilos-general.css">
     <title>Pura Vida</title>
 </head>
 <body>
-    <header class="hero">
-        <div class="hero__content">
-            <p class="hero__tag">Restaurante familiar</p>
+    <nav class="contenedor-menu">
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#bienvenidos">Acerca de</a></li>
+            <li><a href="#servicios">Servicios</a>
+                <ul>
+                    <li><a href="#servicios">Disenio Web</a></li>
+                    <li><a href="#servicios">Desarrollo Web</a></li>
+                    <li><a href="#servicios">Consultoria</a></li>
+                    <li><a href="#servicios">Mercadeo</a></li>
+                    <li><a href="banderas.html">Banderas</a></li>
+                </ul>
+            </li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contacto">Contactenos</a></li>
+        </ul>
+    </nav>
+
+    <header class="portada">
+        <div class="portada__imagen portada__imagen--izquierda">
+            <img src="imagenes/b146b169-686d-4f46-9ea2-b75c733992a7.jpg" alt="Panel de conocimientos CSS">
+        </div>
+        <div class="portada__contenido">
+            <p class="portada__etiqueta">Restaurante familiar</p>
             <h1>Pura Vida</h1>
-            <p class="hero__text">
+            <p class="portada__texto">
                 Sabores frescos, ambiente tranquilo y platos preparados con el toque casero que invita a quedarse.
             </p>
-            <a class="hero__button" href="paginaMenu.html">Ver menu</a>
+        </div>
+        <div class="portada__imagen portada__imagen--derecha">
+            <img src="imagenes/02cf1f70-b33b-4f0a-9725-4fe64d50d23f.jpg" alt="Lista de ejercicios CSS">
         </div>
     </header>
 
-    <main class="content">
-        <section class="card">
+    <main class="contenido">
+        <section class="tarjeta" id="bienvenidos">
             <h2>Bienvenidos</h2>
             <p>
                 En Pura Vida queremos que disfrutes una comida sencilla, deliciosa y hecha con ingredientes de calidad.
             </p>
         </section>
 
-        <section class="card">
+        <section class="tarjeta" id="servicios">
             <h2>Nuestro estilo</h2>
             <p>
                 Ofrecemos desayunos, almuerzos y cenas en un espacio comodo, ideal para compartir en familia o con amigos.
             </p>
+        </section>
+
+        <section class="galeria" id="galeria">
+            <article class="galeria__tarjeta">
+                <img src="imagenes/b146b169-686d-4f46-9ea2-b75c733992a7.jpg" alt="Imagen destacada uno">
+                <div>
+                    <h2>Ambiente alegre</h2>
+                    <p>Una entrada colorida y moderna para recibir a cada cliente con energia y calidez.</p>
+                </div>
+            </article>
+            <article class="galeria__tarjeta">
+                <img src="imagenes/02cf1f70-b33b-4f0a-9725-4fe64d50d23f.jpg" alt="Imagen destacada dos">
+                <div>
+                    <h2>Espacios ordenados</h2>
+                    <p>Detalles simples que hacen del lugar un sitio comodo, limpio y agradable para compartir.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="tarjeta contacto" id="contacto">
+            <h2>Contactenos</h2>
+            <p>Visitanos en Pura Vida y disfruta una experiencia sencilla, rica y hecha con carino.</p>
         </section>
     </main>
 </body>

@@ -1,0 +1,131 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(180deg, #f4ecdf 0%, #fff8ef 100%);
+	color: #2c231d;
+}
+
+.pagina {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 30px 20px 50px;
+}
+
+.encabezado-pagina {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.boton-atras {
+	display: inline-block;
+	margin-bottom: 18px;
+	padding: 12px 22px;
+	border-radius: 999px;
+	background-color: #7a4427;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.encabezado-pagina h1 {
+	margin: 0 0 10px;
+	font-size: 42px;
+}
+
+.encabezado-pagina p {
+	margin: 0;
+	font-size: 18px;
+	color: #5c4739;
+}
+
+.cuadricula-banderas {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 22px;
+}
+
+.tarjeta-bandera {
+	padding: 20px;
+	border-radius: 18px;
+	background-color: #ffffff;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-bandera h2 {
+	margin: 16px 0 0;
+	font-size: 24px;
+	text-align: center;
+}
+
+.bandera {
+	height: 180px;
+	border-radius: 14px;
+	border: 1px solid #d9cfc4;
+	overflow: hidden;
+}
+
+.costarica {
+	background: linear-gradient(
+		to bottom,
+		#1f4aa8 0 16.66%,
+		#ffffff 16.66% 33.33%,
+		#d22d2d 33.33% 66.66%,
+		#ffffff 66.66% 83.33%,
+		#1f4aa8 83.33% 100%
+	);
+}
+
+.colombia {
+	background: linear-gradient(
+		to bottom,
+		#f6d330 0 50%,
+		#21409a 50% 75%,
+		#ce2028 75% 100%
+	);
+}
+
+.rusia {
+	background: linear-gradient(
+		to bottom,
+		#ffffff 0 33.33%,
+		#2246ad 33.33% 66.66%,
+		#d12630 66.66% 100%
+	);
+}
+
+.francia {
+	background: linear-gradient(
+		to right,
+		#1e4aa8 0 33.33%,
+		#ffffff 33.33% 66.66%,
+		#d52d2d 66.66% 100%
+	);
+}
+
+.jamaica {
+	background:
+		linear-gradient(27deg, transparent 44%, #f1c62a 44% 56%, transparent 56%),
+		linear-gradient(-27deg, transparent 44%, #f1c62a 44% 56%, transparent 56%),
+		linear-gradient(153deg, transparent 44%, #f1c62a 44% 56%, transparent 56%),
+		linear-gradient(-153deg, transparent 44%, #f1c62a 44% 56%, transparent 56%),
+		linear-gradient(27deg, #0e8c4a 0 50%, #111111 50% 100%);
+}
+
+.italia {
+	background: linear-gradient(
+		to right,
+		#198754 0 33.33%,
+		#ffffff 33.33% 66.66%,
+		#cf2e2e 66.66% 100%
+	);
+}
+
+@media (max-width: 600px) {
+	.encabezado-pagina h1 {
+		font-size: 34px;
+	}
+
+	.bandera {
+		height: 160px;
+	}
+}

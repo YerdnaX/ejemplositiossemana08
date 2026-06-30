@@ -3,47 +3,86 @@ body{
 	padding: 0;
 	font-family: Arial;
 }
+.contenedor-menu {
+	padding: 18px 20px 0;
+}
 .menu{
-	width: 800px;
-	height: 50px;
+	width: min(100%, 980px);
+	height: 56px;
 	margin: 0 auto;
 	padding: 0;
-	list-style: none;/*Quita las vinetas*/
-	background-color: #bbb;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	background-color: rgba(49, 32, 24, 0.92);
+	border-radius: 18px;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+	position: relative;
+	z-index: 10;
 }
 .menu li{
 	width: 160px;
-	height: 50px;
-	float: left;
-	background-color: #333;
+	height: 56px;
+	position: relative;
 	text-align: center;
 }
 .menu li a{
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	height: 100%;
 	color: #fff;
 	text-decoration: none;
-	line-height: 2.7;	
+	transition: background-color 0.2s ease;
 }
 .menu li a:hover{
 	background-color: #ec7e11;
 }
 .menu ul{
 	list-style: none;
-	padding: 0;
+	padding: 8px 0 0;
 	margin: 0;
-}
-.menu li > ul{
-	width: 160px;
-	height: 50px;
+	position: absolute;
+	top: 56px;
+	left: 0;
+	min-width: 180px;
 	display: none;
+}
+.menu li > ul li {
+	width: 180px;
+	height: 48px;
+	background-color: #3d291f;
+	overflow: hidden;
+}
+.menu li > ul li:first-child {
+	border-radius: 14px 14px 0 0;
+}
+.menu li > ul li:last-child {
+	border-radius: 0 0 14px 14px;
 }
 .menu li:hover > ul{
 	display: block;
 }
-.menu >li>ul li a:hover{
+.menu > li > ul li a:hover{
 	background-color: #70B431;
+}
+
+@media (max-width: 860px) {
+	.menu {
+		flex-wrap: wrap;
+		height: auto;
+	}
+
+	.menu li {
+		width: 33.33%;
+	}
+}
+
+@media (max-width: 560px) {
+	.menu li {
+		width: 50%;
+	}
 }
 
 
